@@ -123,7 +123,7 @@
 const anchor = document.getElementById('view-in-ar-anchor');
 if (/android/i.test(navigator.userAgent)) {
   // iOS - use usdz and QuickLook
-  const intent = `intent://arvr.google.com/scene-viewer/1.0?file=${window.location.origin}/assets/donut.glb&mode=ar_only&title=AR%20Product%20Preview Demo#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=${window.location.href};end;`
+  const intent = `intent://arvr.google.com/scene-viewer/1.0?file=${window.location.origin}/assets/donut.glb&mode=ar_only&title=AR%Donut%20Experience#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=${window.location.href};end;`
   anchor.setAttribute('href', intent);
 }
 const modelviewer = document.querySelector('model-viewer');
