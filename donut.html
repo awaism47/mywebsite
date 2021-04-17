@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Awais Munawar">
     <meta name="generator" content="Hugo 0.79.0">
-    <title>Blender Ship</title>
+    <title>Finnieston Crane</title>
 
       <!-- 💁 Include both scripts below to support all browsers! -->
 
@@ -93,7 +93,7 @@
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
   <header class="mb-auto">
     <div>
-      <h3 class="float-md-start mb-0">Blender Donut in AR</h3>
+      <h3 class="float-md-start mb-0">Finnieston Crane in AR</h3>
       <nav class="nav nav-masthead justify-content-center float-md-end">
         <a class="nav-link active" aria-current="page" href="#">Home</a>
       </nav>
@@ -123,11 +123,11 @@
 const anchor = document.getElementById('view-in-ar-anchor');
 if (/android/i.test(navigator.userAgent)) {
   // iOS - use usdz and QuickLook
-  const intent = `intent://arvr.google.com/scene-viewer/1.0?file=${window.location.origin}/assets/ship.glb&mode=ar_only&title=AR%20Ship%20Experience#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=${window.location.href};end;`
+  const intent = `intent://arvr.google.com/scene-viewer/1.0?file=${window.location.origin}/assets/crane.glb&mode=ar_only&title=AR%20Crane%20Experience#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=${window.location.href};end;`
   anchor.setAttribute('href', intent);
 }
 const modelviewer = document.querySelector('model-viewer');
-modelviewer.setAttribute('src', 'assets/ship.glb');
+modelviewer.setAttribute('src', 'assets/crane.glb');
 </script>
 
 
